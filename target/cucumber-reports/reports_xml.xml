@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="41.165" tests="3" skipped="0" failures="2" errors="0">
+<testcase classname="Login" name="successful Login with Valid Credentials" time="24.127">
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters Email as "admin@yourstore.com" and Password as "admin"......passed
+And Click on Login..........................................................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successfull login with Valid Credentials DDT - #1.1" time="9.047">
+<failure/>
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters Email as <"email"> and Password as <"password">.............undefined
+And Click on Login..........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Successfull login with Valid Credentials DDT - #1.2" time="7.487">
+<failure/>
+<system-out><![CDATA[
+Given User Launch Chrome browser............................................passed
+When User opens URL "https://admin-demo.nopcommerce.com/login"..............passed
+And User enters Email as <"email"> and Password as <"password">.............undefined
+And Click on Login..........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
